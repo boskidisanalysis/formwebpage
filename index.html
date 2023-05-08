@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Welcome to my website!</h1>
+      <p>Here you'll find information about our projects and our team.</p>
+      <form id="myForm">
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+        <br>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname" name="surname"><br>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob"><br>
+        <label for="education">Education Level:</label>
+        <select id="education" name="education">
+          <option value="high-school">High School</option>
+          <option value="bachelor">Bachelor's Degree</option>
+          <option value="master">Master's Degree</option>
+          <option value="phd">PhD</option>
+        </select>
+        <br><br>
+        <input type="button" value="Submit" onclick="submitForm()">
+      </form>
+    </main>
+    <footer>
+      <p>&copy; 2023 My Website</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
